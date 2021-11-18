@@ -92,7 +92,7 @@ class Counter extends Component {
         if (this.state.showClock) {
             clockElement = <ClockFunctional toggleClockMethod={this.toggleClock} />
         } else {
-            clockElement = <span class="show-clock" onClick={this.toggleClock}>Show clock </span>
+            clockElement = <span class="show-clock" onClick={this.toggleClock}>Show clock</span>
         }
 
 
