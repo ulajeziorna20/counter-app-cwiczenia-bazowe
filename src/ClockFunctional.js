@@ -5,29 +5,29 @@ import './ClockFunctional.css';
 
 const ClockFunctional = (props) => {
 
-    // const [date, setDate] = useState(new Date());
+    const [date, setDate] = useState(new Date());
 
 
-    // const tick = () => {
+    const tick = () => {
 
-    //     setDate(new Date())
-    // }
-
-
-
-    // useEffect(() => {
+        setDate(new Date())
+    }
 
 
-    //     let timerID = setInterval(
-    //         () => {tick()},
-    //         1000
-    //     );
+
+    useEffect(() => {
 
 
-    //     return (() => {
-    //         clearInterval(timerID);
-    //     })
-    // }, [date])
+        let timerID = setInterval(
+            () => {tick()},
+            1000
+        );
+
+
+        return (() => {
+            clearInterval(timerID);
+        })
+    }, [date])
 
 
 
@@ -38,7 +38,7 @@ const ClockFunctional = (props) => {
 
     return (
         <div className="clock">
-        {/* //     <h4>Time: {date.toLocaleTimeString()}  <span onClick={props.toggleClockMethod()}>X</span></h4> */}
+        //     <h4>Time: {date.toLocaleTimeString()}  <span onClick={props.toggleClockMethod()}>X</span></h4>
 
         </div>
     )
