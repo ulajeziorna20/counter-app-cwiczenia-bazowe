@@ -1,14 +1,30 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import Counter from './Counter';
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+
+        <Counter initValue={108} />
+        <Counter initValue={0} />
+        {/* <Counter initValue={41} /> */}
+
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+
+        <h1>Ulcia Wprowadzilam zmiany w pliku App.js</h1>
+
+
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> */}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,6 +34,8 @@ function App() {
           Learn React
         </a>
       </header>
+
+
     </div>
   );
 }
